@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Orientada a Objetos</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="programacion-estructurada.html">Programación Estructurada</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Programación Orientada a Objetos (POO)</h1>
+        <p>La POO se basa en objetos que encapsulan datos y comportamientos.</p>
+
+        <section>
+            <h2>Conceptos Clave</h2>
+            <ul>
+                <li><strong>Clases:</strong> Plantillas para crear objetos.</li>
+                <li><strong>Objetos:</strong> Instancias de una clase.</li>
+                <li><strong>Herencia:</strong> Permite compartir propiedades entre clases.</li>
+                <li><strong>Encapsulamiento:</strong> Protege los datos dentro de un objeto.</li>
+                <li><strong>Polimorfismo:</strong> Permite que objetos diferentes respondan de manera única al mismo método.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplo Práctico</h2>
+            <p>Este ejemplo muestra cómo implementar herencia y polimorfismo:</p>
+            <pre><code class="javascript">
+class Animal {
+    constructor(nombre) {
+        this.nombre = nombre;
+    }
+    hablar() {
+        return `${this.nombre} hace un sonido.`;
+    }
+}
+
+class Perro extends Animal {
+    hablar() {
+        return `${this.nombre} ladra.`;
+    }
+}
+
+class Gato extends Animal {
+    hablar() {
+        return `${this.nombre} maúlla.`;
+    }
+}
+
+const animales = [new Perro("Rex"), new Gato("Miau")];
+animales.forEach(animal => console.log(animal.hablar()));
+            </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Página Educativa de Programación</p>
+    </footer>
+</body>
+</html>
