@@ -5,14 +5,13 @@ body {
     padding: 0; /* Elimina rellenos predeterminados */
 }
 
-/* Estilos del encabezado */
+/* Encabezado */
 header {
     background-color: #007BFF; /* Color de fondo azul */
     color: white; /* Texto blanco */
     padding: 10px 0; /* Espaciado interno */
 }
 
-/* Menú de navegación */
 nav ul {
     list-style: none; /* Elimina viñetas */
     display: flex; /* Diseño flexible */
